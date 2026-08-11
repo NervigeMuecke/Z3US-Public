@@ -740,7 +740,7 @@ loadBtn.MouseButton1Click:Connect(function()
         if counterbloxVersion == "New" then
             cloneref(game:GetService("Players").LocalPlayer:Kick("This script is detected and will get u banned"))
         else
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/Games/Z3US%20Counterblox.lua"))()
+            cloneref(game:GetService("Players").LocalPlayer:Kick("This script is detected and will get u banned"))
         end
 
     elseif selectedGame == "GunFight" then
@@ -773,6 +773,7 @@ loadBtn.MouseButton1Click:Connect(function()
         loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/2548ffbebdf21063cd4083f93a27ac276d44d1cb6503093d9c3290c3dfd954e3/download"))()
 
     elseif selectedGame == "Arsenal" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/Games/Z3US%20Arsenal%20Beta.lua"))()
+        getgenv().SCRIPT_KEY = ""
+        loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/edb83cf0f1c81ecc7357cccb96979d81cfb2cec3e0114a980dc46751f3ed86c7/download"))()
     end
 end)
