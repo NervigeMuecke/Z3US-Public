@@ -744,10 +744,12 @@ loadBtn.MouseButton1Click:Connect(function()
         end
 
     elseif selectedGame == "GunFight" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/Games/Z3US%20Gunfight%20Arena.lua"))()
+        getgenv().SCRIPT_KEY = ""
+        loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/c5335ccfffdf85ccdc01c2ccaeeb884941c55817bd0573e2491934501d033d9b/download"))()
 
     elseif selectedGame == "Universal" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/Games/Z3US%20Universal.lua"))()
+        getgenv().SCRIPT_KEY = ""
+        loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/3cf9158bbebe2e92ae85890b25db3bc293e79b1e52d6e266df50917de9b09ab5/download"))()
 
     elseif selectedGame == "Rivals" then
         if rivalsVersion == "V2" then
