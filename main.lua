@@ -758,9 +758,6 @@ loadBtn.MouseButton1Click:Connect(function()
             getgenv().SCRIPT_KEY = ""
             loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/2438cfd42af811d55492e854318eeda24a73aa5d0b11a403ec1f7542abd8f2f0/download"))()
         else
-            repeat task.wait() until game:IsLoaded()
-            repeat task.wait() until cloneref(game:GetService("Players").LocalPlayer) and cloneref(game:GetService("Players").LocalPlayer.Character)
-            repeat task.wait() until not cloneref(game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("LoadingScreen"))
             getgenv().autoload = rivalsAutoload
             getgenv().silentload = rivalsSilentload
             getgenv().SCRIPT_KEY = ""
